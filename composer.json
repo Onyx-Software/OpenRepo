@@ -3,7 +3,13 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+		"twbs/bootstrap": "dev-3.0.0-wip",
+		"swiftmailer/swiftmailer": "v5.0.1",
+		"components/jquery": "dev-master",
+		"jasonlewis/basset": "dev-master",
+		"components/font-awesome": "3.2.*@dev",
+		"juy/profiler": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
