@@ -180,8 +180,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Basset' => 'Basset\Facade',
-		'Profiler'      => 'Juy\Profiler\Facades\Profiler',
+		'Basset' 		  => 'Basset\Facade',
+		'Profiler'        => 'Juy\Profiler\Facades\Profiler',
 
 	),
 
