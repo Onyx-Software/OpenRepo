@@ -1,7 +1,17 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "onyx-software/openrepo",
+	"description": "Open Source PHP Repository Software",
+	"keywords": ["laravel", "open", "source", "php", "repository"],
+	"homepage" : "http://openrepo.net",
+	"authors": [
+        {
+            "name": "Tom Kent",
+            "email": "email@tomkent.me",
+            "homepage": "http://www.tomkent.me",
+            "role": "Lead Developer"
+        }
+    ],
+    "license": "GPL-3.0",
 	"require": {
 		"laravel/framework": "4.1.*",
 		"twbs/bootstrap": "dev-3.0.0-wip",

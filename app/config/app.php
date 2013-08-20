@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => '',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -103,7 +103,6 @@ return array(
 		'Illuminate\Foundation\Providers\PublisherServiceProvider',
 		'Illuminate\Queue\QueueServiceProvider',
 		'Illuminate\Redis\RedisServiceProvider',
-		'Illuminate\Remote\RemoteServiceProvider',
 		'Illuminate\Auth\Reminders\ReminderServiceProvider',
 		'Illuminate\Foundation\Providers\RouteListServiceProvider',
 		'Illuminate\Database\SeedServiceProvider',
@@ -114,6 +113,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Basset\BassetServiceProvider',
+		'Juy\Profiler\Providers\ProfilerServiceProvider',
 
 	),
 
@@ -175,11 +176,12 @@ return array(
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
 		'Session'         => 'Illuminate\Support\Facades\Session',
-		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		'Basset' => 'Basset\Facade',
+		'Profiler'      => 'Juy\Profiler\Facades\Profiler',
 
 	),
 
