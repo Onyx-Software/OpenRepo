@@ -30,38 +30,39 @@ return array(
 
         'application' => function($collection)
         {
-            $collection->requireTree('../vendor/twbs/bootstrap/dist/');
-            // Switch to the stylesheets directory and require the "less" and "sass" directories.
-            // These directories both have a filter applied to them so that the built
-            // collection will contain valid CSS.
-            $directory = $collection->directory('assets/stylesheets', function($collection)
-            {
-                $collection->requireDirectory('less')->apply('Less');
-                $collection->requireDirectory('sass')->apply('Sass');
-                $collection->requireDirectory();
-            });
-
-            $directory->apply('CssMin');
-            $directory->apply('UriRewriteFilter');
-
-            // Switch to the javascripts directory and require the "coffeescript" directory. As
-            // with the above directories we'll apply the CoffeeScript filter to the directory
-            // so the built collection contains valid JS.
-            $directory = $collection->directory('assets/javascripts', function($collection)
-            {
-                $collection->requireDirectory('coffeescripts')->apply('CoffeeScript');
-                $collection->requireDirectory();
-            });
-
-            $directory->apply('JsMin');
-
+            /*
+            |-------------------------------------------------------------------------------
+            | Javascript
+            |-------------------------------------------------------------------------------
+            | List out any javascript requirements
+            |
+            */
+            //jQuery
+            $collection->javascript('../components/jquery/jquery.min.js');
+ 
+            //bootstrap
             $collection->javascript('../vendor/twbs/bootstrap/dist/js/bootstrap.min.js');
 
-            //font awesome
+            //custom, theme based JS
+            $collection->requireDirectory('assets/'.Config::get('openrepo.theme').'/js');
+ 
+            /*
+            |-------------------------------------------------------------------------------
+            | CSS
+            |-------------------------------------------------------------------------------
+            | List out any CSS requirements
+            |
+            */
+            //fontawesome
             $collection->requireDirectory('../components/font-awesome/css');
-            $collection->requireDirectory('../components/font-awesome/less');
-        }
+            
+            //bootstrap
+            $collection->stylesheet('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css');
+            $collection->stylesheet('../vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css');
 
+            //custom, theme based CSS
+            $collection->requireDirectory('assets/'.Config::get('openrepo.theme').'/css');
+        },
     ),
 
     /*
