@@ -24,8 +24,8 @@ return array(
 	| EG - A "custom" theme
 	| -		"/app/views/custom" should be made, copying templates from 
 	| 		/app/views/default and making any changes
-	| - 	"public/assets/stylesheets/custom" and 
-	|		"public/assets/javascripts/custom" should also be made
+	| - 	"public/assets/custom/css" and 
+	|		"public/assets/custom/js" should also be made
 	|
 	*/
 
